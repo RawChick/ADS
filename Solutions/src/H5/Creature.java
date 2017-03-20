@@ -13,7 +13,7 @@ abstract class Creature implements Cloneable {
     String describe() {
         return name;
     }
-    
+
     static LinkedList<Creature> toLinkedList0(ArrayList<Creature> pets) {
         LinkedList<Creature> list = new LinkedList<>();
         for (Creature pet : pets) {
@@ -90,7 +90,7 @@ class Human extends Creature implements Cloneable {
     Human(Human that) throws CloneNotSupportedException {
         this.name = that.name;
         this.country = that.country;
-        this.dob = new LocalDate(dob.year, dob.month, dob.date);
+//        this.dob = new LocalDate(dob.getYear(), dob.getMonth(), dob.getDayOfWeek());
     }
 
     @Override

@@ -1,6 +1,5 @@
 package H5;
 
-import java.time.LocalDate;
 import java.util.Stack;
 
 class Exercise3 extends Exercise {
@@ -13,9 +12,9 @@ class Exercise3 extends Exercise {
     @Override
     void test() {
         Country nl = new Country("Nederland", 10);
-        Human henk = new Human("Henk", nl, new LocalDate(2001, 4, 23));
-   
-        Console.writeLine(henk.describe());
+//        Human henk = new Human("Henk", nl, new LocalDate(2001, 4, 23));
+
+//        Console.writeLine(henk.describe());
     }
 
     int priority(char ch) {
