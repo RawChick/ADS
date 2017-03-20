@@ -1,22 +1,29 @@
 package H4;
 
+import Tools.Console;
+import Tools.Exercise;
+
 import java.util.ArrayList;
 
 class Exercise1 extends Exercise {
 
+    public Exercise1(String title) {
+        super(title);
+    }
+
     @Override
-    String getTitle() {
+    public String getTitle() {
         return "My Pets";
     }
 
     @Override
-    void test() {
+    public void test() {
 
         ArrayList<Pet> pets = new ArrayList<>();
-        
+
         Dog fido = new Dog("Fido");
         Rabbit flopsy = new Rabbit("Flopsy");
-        
+
         pets.add(fido);
         pets.add(flopsy);
         pets.add(new Rabbit("Peter"));

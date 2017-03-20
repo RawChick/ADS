@@ -1,13 +1,15 @@
 package H4;
 
 
+import Tools.Console;
+import Tools.Exercise;
 
 public class Week4 {
 
     private final Exercise[] exercises = {
-        new Exercise1(),
-        new Exercise2(),
-        new Exercise3()
+            new Exercise1("Exersise1"),
+            new Exercise2("Exersise2"),
+            new Exercise3("Exersise3")
     };
 
     private void list() {
@@ -16,7 +18,7 @@ public class Week4 {
         }
     }
     Week4() {
-            int choice;
+        int choice;
         do {
             list();
             choice = Console.readInt("What? (0 for help, -1 to quit) ", -1, exercises.length);
